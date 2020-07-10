@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-10T02:56:28.085Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1743156852,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Reading computer from search results",
+        "description": "",
+        "id": "computers;reading-computer-from-search-results",
+        "after": [
+          {
+            "result": {
+              "duration": 80322207,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 521646642,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user navigates Computer Data Base Page",
+            "match": {
+              "location": "CreateComputer.the_user_navigates_Computer_Data_Base_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182963762,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters \"Berry\" to the searching input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Berry\"",
+                  "offset": 16
+                }
+              ],
+              "location": "ReadComputers.the_user_enters_to_the_searching_input_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 228054670,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks the Filter by name button",
+            "match": {
+              "location": "UpdateComputer.the_user_clicks_the_Filter_by_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52032313,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user verifies that all computer name in the results contains \"Berry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Berry\"",
+                  "offset": 65
+                }
+              ],
+              "location": "ReadComputers.the_user_verifies_that_all_computer_name_in_the_results_contains(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@read"
+          }
+        ]
+      }
+    ],
+    "name": "Computers",
+    "description": "",
+    "id": "computers",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ComputerRead.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Computers creation
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.001 s <<< FAILURE! - in Computers creation
+Creating a new computer(Computers creation)  Time elapsed: 11.567 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//strong[contains(text(),'Done!')]"}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BURAKs-MacBook-Pro.local', ip: 'fe80:0:0:0:14df:9195:7e98:9a59%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: /var/folders/wt/1_y1wknd7xd...}, goog:chromeOptions: {debuggerAddress: localhost:56244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f5159c2b97770ee6ba86f42c6d8c9c01
+*** Element info: {Using=xpath, value=//strong[contains(text(),'Done!')]}
+
