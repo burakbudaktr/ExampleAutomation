@@ -1,7 +1,7 @@
 package com.computers.step_definitions;
 
-import com.computers.locaters.BasePage;
-import com.computers.locaters.ComputerCreationPage;
+import com.computers.PageFactory.BasePage;
+import com.computers.PageFactory.ComputerCreationPage;
 import com.computers.utilities.ConfigurationReader;
 import com.computers.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -45,9 +45,10 @@ public class CreateComputer {
      }
 
      @When("The user selects {string}")
-     public void the_user_selects(String companyName) {
+     public void the_user_selects(String companyName) throws InterruptedException {
          computerCreationPage.selectCompany(companyName).click();
 
+      // Thread.sleep(2000);
      }
 
      @When("The user clicks the Create this computer button")
@@ -58,11 +59,12 @@ public class CreateComputer {
      }
 
      @Then("The warning message should be {string}")
-     public void the_warning_message_should_be(String expectedMessage) {
+     public void the_warning_message_should_be(String expectedMessage) throws InterruptedException {
 
              String actualMessage = basePage.warningMessage.getText();
              Assert.assertEquals(actualMessage, expectedMessage);
 
+            // Thread.sleep(2000);
      }
 
 

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="IMMJ_Computer" />
+        <module name="Computer_Automation" />
       </profile>
     </annotationProcessing>
   </component>

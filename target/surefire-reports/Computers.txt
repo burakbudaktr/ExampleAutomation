@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Computers
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.538 s <<< FAILURE! - in Computers
-Creating a new computer without any data(Computers)  Time elapsed: 7.538 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...okuapp.com/computers[/new]> but was:<...okuapp.com/computers[]>
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.24 s <<< FAILURE! - in Computers
+Reading computer from search results(Computers)  Time elapsed: 5.24 s  <<< FAILURE!
+java.lang.AssertionError
 

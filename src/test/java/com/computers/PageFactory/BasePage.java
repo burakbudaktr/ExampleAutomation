@@ -1,4 +1,4 @@
-package com.computers.locaters;
+package com.computers.PageFactory;
 
 import com.computers.utilities.Driver;
 import org.openqa.selenium.WebElement;

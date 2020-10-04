@@ -1,7 +1,7 @@
 package com.computers.step_definitions;
 
-import com.computers.locaters.BasePage;
-import com.computers.locaters.ComputerCreationPage;
+import com.computers.PageFactory.BasePage;
+import com.computers.PageFactory.ComputerCreationPage;
 import io.cucumber.java.en.When;
 
 public class UpdateComputer {

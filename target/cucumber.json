@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-10T02:56:28.085Z",
+        "start_timestamp": "2020-09-25T08:29:51.513Z",
         "before": [
           {
             "result": {
-              "duration": 1743156852,
+              "duration": 1698435132,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Reading computer from search results",
+        "line": 21,
+        "name": "Navigation",
         "description": "",
-        "id": "computers;reading-computer-from-search-results",
+        "id": "computers;navigation",
         "after": [
           {
             "result": {
-              "duration": 80322207,
+              "duration": 90873104,
               "status": "passed"
             },
             "match": {
@@ -35,68 +35,44 @@
         "steps": [
           {
             "result": {
-              "duration": 521646642,
+              "duration": 5472024474,
               "status": "passed"
             },
-            "line": 4,
-            "name": "The user navigates Computer Data Base Page",
+            "line": 22,
+            "name": "I am on the app galalry",
             "match": {
-              "location": "CreateComputer.the_user_navigates_Computer_Data_Base_Page()"
+              "location": "defra.i_am_on_the_app_galalry()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 182963762,
+              "duration": 669078,
               "status": "passed"
             },
-            "line": 5,
-            "name": "The user enters \"Berry\" to the searching input box",
+            "line": 23,
+            "name": "I selected api for waste carier",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Berry\"",
-                  "offset": 16
-                }
-              ],
-              "location": "ReadComputers.the_user_enters_to_the_searching_input_box(String)"
+              "location": "defra.i_selected_api_for_waste_carier()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 228054670,
+              "duration": 997551,
               "status": "passed"
             },
-            "line": 6,
-            "name": "The user clicks the Filter by name button",
+            "line": 24,
+            "name": "new tab opened and the api page for waste carier",
             "match": {
-              "location": "UpdateComputer.the_user_clicks_the_Filter_by_name_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 52032313,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "The user verifies that all computer name in the results contains \"Berry\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Berry\"",
-                  "offset": 65
-                }
-              ],
-              "location": "ReadComputers.the_user_verifies_that_all_computer_name_in_the_results_contains(String)"
+              "location": "defra.new_tab_opened_and_the_api_page_for_waste_carier()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@read"
+            "name": "@defra"
           }
         ]
       }
@@ -105,7 +81,7 @@
     "description": "",
     "id": "computers",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ComputerRead.feature",
+    "uri": "file:src/test/resources/features/ComputerCreation.feature",
     "tags": []
   }
 ]

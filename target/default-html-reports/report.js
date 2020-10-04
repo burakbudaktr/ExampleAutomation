@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ComputerRead.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ComputerCreation.feature");
 formatter.feature({
   "name": "Computers",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Reading computer from search results",
+  "name": "Navigation",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@read"
+      "name": "@defra"
     }
   ]
 });
@@ -18,41 +18,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user navigates Computer Data Base Page",
+  "name": "I am on the app galalry",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "CreateComputer.the_user_navigates_Computer_Data_Base_Page()"
+  "location": "defra.i_am_on_the_app_galalry()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user enters \"Berry\" to the searching input box",
+  "name": "I selected api for waste carier",
   "keyword": "When "
 });
 formatter.match({
-  "location": "ReadComputers.the_user_enters_to_the_searching_input_box(String)"
+  "location": "defra.i_selected_api_for_waste_carier()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks the Filter by name button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "UpdateComputer.the_user_clicks_the_Filter_by_name_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user verifies that all computer name in the results contains \"Berry\"",
+  "name": "new tab opened and the api page for waste carier",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ReadComputers.the_user_verifies_that_all_computer_name_in_the_results_contains(String)"
+  "location": "defra.new_tab_opened_and_the_api_page_for_waste_carier()"
 });
 formatter.result({
   "status": "passed"
