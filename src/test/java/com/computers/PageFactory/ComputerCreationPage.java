@@ -22,7 +22,6 @@ public class ComputerCreationPage {
     @FindBy (id="discontinued")
     public WebElement discontinuedDate;
 
-
     @FindBy(xpath = "//input[@value='Create this computer']")
     public WebElement createNewComputerButton;
 

@@ -48,7 +48,7 @@ public class CreateComputer {
      public void the_user_selects(String companyName) throws InterruptedException {
          computerCreationPage.selectCompany(companyName).click();
 
-      // Thread.sleep(2000);
+         Thread.sleep(2000);
      }
 
      @When("The user clicks the Create this computer button")
@@ -64,11 +64,8 @@ public class CreateComputer {
              String actualMessage = basePage.warningMessage.getText();
              Assert.assertEquals(actualMessage, expectedMessage);
 
-            // Thread.sleep(2000);
+             Thread.sleep(2000);
      }
-
-
-
 
 
 

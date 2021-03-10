@@ -15,17 +15,19 @@ public class UpdateComputer {
 
     @When("The user clicks the Filter by name button")
     public void the_user_clicks_the_Filter_by_name_button() {
-      basePage.filterByNameButton.click();
+
+        basePage.filterByNameButton.click();
+
     }
 
     @When("The user clicks the the computer in the result")
     public void the_user_clicks_the_the_computer_in_the_result() {
-       basePage.createdComputerName.click();
+        basePage.createdComputerName.click();
     }
 
     @When("The user clicks the Save this computer button")
     public void the_user_clicks_the_Save_this_computer_button() {
-      computerCreationPage.saveThisComputerButton.click();
+        computerCreationPage.saveThisComputerButton.click();
     }
 
 
@@ -33,7 +35,5 @@ public class UpdateComputer {
     public void the_user_clears_the_computer_name() {
        computerCreationPage.computerName.clear();
     }
-
-
 
 }

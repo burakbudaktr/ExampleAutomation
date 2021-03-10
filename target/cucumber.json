@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-09-25T08:29:51.513Z",
+        "start_timestamp": "2021-03-10T12:02:25.384Z",
         "before": [
           {
             "result": {
-              "duration": 1698435132,
+              "duration": 1514445802,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 21,
-        "name": "Navigation",
+        "line": 16,
+        "name": "Creating a new computer",
         "description": "",
-        "id": "computers;navigation",
+        "id": "computers;creating-a-new-computer;computers;2",
         "after": [
           {
             "result": {
-              "duration": 90873104,
+              "duration": 78213268,
               "status": "passed"
             },
             "match": {
@@ -31,48 +31,466 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5472024474,
+              "duration": 1047436337,
               "status": "passed"
             },
-            "line": 22,
-            "name": "I am on the app galalry",
+            "line": 5,
+            "name": "The user navigates Computer Data Base Page",
             "match": {
-              "location": "defra.i_am_on_the_app_galalry()"
+              "location": "CreateComputer.the_user_navigates_Computer_Data_Base_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 669078,
+              "duration": 485921382,
               "status": "passed"
             },
-            "line": 23,
-            "name": "I selected api for waste carier",
+            "line": 6,
+            "name": "The user clicks the Add a new computer button",
             "match": {
-              "location": "defra.i_selected_api_for_waste_carier()"
+              "location": "CreateComputer.the_user_clicks_the_Add_a_new_computer_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 997551,
+              "duration": 123217439,
               "status": "passed"
             },
-            "line": 24,
-            "name": "new tab opened and the api page for waste carier",
+            "line": 7,
+            "name": "The user enters \"IdeaPad\" to computer name input box",
             "match": {
-              "location": "defra.new_tab_opened_and_the_api_page_for_waste_carier()"
+              "arguments": [
+                {
+                  "val": "\"IdeaPad\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_computer_name_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53304825,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user enters \"2017-01-01\" to introduced date input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2017-01-01\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_introduced_date_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60367348,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters \"2018-01-01\" to discontinued date input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2018-01-01\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_discontinued_date_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48947454,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user selects \"Lenovo Group\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lenovo Group\"",
+                  "offset": 17
+                }
+              ],
+              "location": "CreateComputer.the_user_selects(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 373131553,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user clicks the Create this computer button",
+            "match": {
+              "location": "CreateComputer.the_user_clicks_the_Create_this_computer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26890426,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The warning message should be \"Done!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Done!\"",
+                  "offset": 30
+                }
+              ],
+              "location": "CreateComputer.the_warning_message_should_be(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@defra"
+            "name": "@create"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-10T12:02:29.235Z",
+        "before": [
+          {
+            "result": {
+              "duration": 747852253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Creating a new computer",
+        "description": "",
+        "id": "computers;creating-a-new-computer;computers;3",
+        "after": [
+          {
+            "result": {
+              "duration": 81634237,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1315495851,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user navigates Computer Data Base Page",
+            "match": {
+              "location": "CreateComputer.the_user_navigates_Computer_Data_Base_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 652872935,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks the Add a new computer button",
+            "match": {
+              "location": "CreateComputer.the_user_clicks_the_Add_a_new_computer_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115954461,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user enters \"TouchPad\" to computer name input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TouchPad\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_computer_name_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61631950,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user enters \"2018-01-01\" to introduced date input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2018-01-01\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_introduced_date_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54808925,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters \"2019-01-01\" to discontinued date input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-01-01\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_discontinued_date_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49653140,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user selects \"ASUS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ASUS\"",
+                  "offset": 17
+                }
+              ],
+              "location": "CreateComputer.the_user_selects(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 696870574,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user clicks the Create this computer button",
+            "match": {
+              "location": "CreateComputer.the_user_clicks_the_Create_this_computer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24139621,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The warning message should be \"Done!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Done!\"",
+                  "offset": 30
+                }
+              ],
+              "location": "CreateComputer.the_warning_message_should_be(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-10T12:02:33.043Z",
+        "before": [
+          {
+            "result": {
+              "duration": 876471171,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Creating a new computer",
+        "description": "",
+        "id": "computers;creating-a-new-computer;computers;4",
+        "after": [
+          {
+            "result": {
+              "duration": 78531765,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1070618129,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user navigates Computer Data Base Page",
+            "match": {
+              "location": "CreateComputer.the_user_navigates_Computer_Data_Base_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 782737258,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user clicks the Add a new computer button",
+            "match": {
+              "location": "CreateComputer.the_user_clicks_the_Add_a_new_computer_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125856254,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user enters \"MacBook1983\" to computer name input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MacBook1983\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_computer_name_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59562836,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user enters \"2019-01-01\" to introduced date input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2019-01-01\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_introduced_date_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52410450,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters \"2020-01-01\" to discontinued date input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-01-01\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CreateComputer.the_user_enters_to_discontinued_date_input_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47472023,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user selects \"Apple Inc.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple Inc.\"",
+                  "offset": 17
+                }
+              ],
+              "location": "CreateComputer.the_user_selects(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 871452370,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user clicks the Create this computer button",
+            "match": {
+              "location": "CreateComputer.the_user_clicks_the_Create_this_computer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21802396,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The warning message should be \"Done!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Done!\"",
+                  "offset": 30
+                }
+              ],
+              "location": "CreateComputer.the_warning_message_should_be(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create"
           }
         ]
       }

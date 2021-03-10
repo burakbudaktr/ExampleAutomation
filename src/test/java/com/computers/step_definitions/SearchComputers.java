@@ -10,11 +10,11 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class ReadComputers {
+public class SearchComputers {
 
     BasePage basePage=new BasePage();
-    @When("The user enters {string} to the searching input box")
-    public void the_user_enters_to_the_searching_input_box(String str) throws InterruptedException {
+    @When("The user types {string} to the searching input box")
+    public void the_user_types_to_the_searching_input_box(String str) throws InterruptedException {
 
       basePage.searchBox.sendKeys(str);
 

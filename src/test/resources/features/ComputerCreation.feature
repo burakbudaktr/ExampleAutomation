@@ -17,11 +17,4 @@ Scenario Outline: Creating a new computer
       | TouchPad         | 2018-01-01         |      2019-01-01      |    ASUS       |
       | MacBook1983      | 2019-01-01         |      2020-01-01      |  Apple Inc.   |
 
-  @defra
-  Scenario: Navigation
-    Given I am on the app galalry
-    When I selected api for waste carier
-    Then new tab opened and the api page for waste carier
-
-
 
